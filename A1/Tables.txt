@@ -1,0 +1,51 @@
+!t4
+<
+d1 int;
+d2 string;
+%
+d1;
+^
+d2 t1.a1;
+$
+#4,"s"
+!t5
+<
+e1 int;
+e2 string;
+e3 decimal;
+e4 boolean;
+%
+e1;
+^
+$
+#1,"s",4.5,false
+#1,"tr",3.0,false
+!t1
+<
+a1 string;
+a2 decimal;
+a3 int;
+a4 boolean;
+%
+a1;
+^
+a3 t2.b1;
+$
+#"s",1.0,1,true
+#"x",2.0,1,false
+!t2
+<
+b1 int;
+%
+b1;
+^
+$
+#1
+#56
+!t3
+<
+c1 string;
+%
+c1;
+^
+$

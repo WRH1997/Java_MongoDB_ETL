@@ -1,0 +1,399 @@
+[2023.02.11.16.49.54]: [waleed] logged in.
+
+[2023.02.12.13.44.21]: [waleed] logged in.
+
+[2023.02.12.13.44.43]: User: [waleed]
+Command: [create table t1(d1 int, d2 string, primary key (d1), foreign key (d2) reference t1(a1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.12.13.45.13]: User: [waleed]
+Command: [create table t1(d1 int, d2 string, primary key (d1), foreign key (d2) references t1(a1));]
+Result: [SQL Create Error: Table [t1] already exists!]
+
+[2023.02.12.13.45.43]: User: [waleed]
+Command: [create table t4(d1 int, d2 string, primary key (d1), foreign key (d2) references t1(a1));]
+Result: [Table [t4] was created successfully!]
+
+[2023.02.12.13.46.55]: [waleed] logged in.
+
+[2023.02.12.13.47.19]: User: [waleed]
+Command: [select * from t4;]
+Result: [d1 || d2 || 
+]
+
+[2023.02.12.13.47.24]: User: [waleed]
+Command: [select * from t1;]
+Result: [a1 || a2 || a3 || a4 || 
+"s" || 1.0 || 1 || true || 
+"x" || 2.0 || 1 || false || 
+]
+
+[2023.02.12.14.43.21]: [waleed] logged in.
+
+[2023.02.12.14.43.51]: User: [waleed]
+Command: [insert into t3 values("p5r");]
+Result: [Values inserted successfully into table [t3]!]
+
+[2023.02.12.14.44.21]: User: [waleed]
+Command: [insert into t3 values();]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.12.14.44.32]: User: [waleed]
+Command: [insert into t3 values("p5r");]
+Result: [SQL Insert Error: Primary key value ["p5r"] already exists in table [t3]!]
+
+[2023.02.12.14.44.47]: User: [waleed]
+Command: [insert into t3 values(5);]
+Result: [SQL Insert Error: Table schema defines [c1] as String, but value supplied is not String!]
+
+[2023.02.12.14.46.12]: [waleed] logged in.
+
+[2023.02.12.14.46.38]: [waleed] logged in.
+
+[2023.02.12.14.49.04]: [waleed] logged in.
+
+[2023.02.12.14.49.30]: [waleed] logged in.
+
+[2023.02.12.14.50.13]: [waleed] logged in.
+
+[2023.02.12.14.50.46]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.51.02]: [waleed] logged in.
+
+[2023.02.12.14.51.03]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.51.18]: User: [waleed]
+Command: [insert int t4 values(5, "s");]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.12.14.51.33]: User: [waleed]
+Command: [insert into t4 values (5, "s"):]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.12.14.51.45]: User: [waleed]
+Command: [insert into t4 values(5, "s"):]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.12.14.52.01]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.52.07]: User: [waleed]
+Command: [insert into t4 values(5, "s");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.54.45]: [waleed] logged in.
+
+[2023.02.12.14.56.07]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.56.25]: [waleed] logged in.
+
+[2023.02.12.14.56.26]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.56.48]: [waleed] logged in.
+
+[2023.02.12.14.57.00]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value [5] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.57.11]: [waleed] logged in.
+
+[2023.02.12.14.57.12]: User: [waleed]
+Command: [insert into t4 values(5, "rr");]
+Result: [SQL Insert Error: Foreign key value ["rr"] is not a primary key in the reference table [t1]!]
+
+[2023.02.12.14.57.24]: User: [waleed]
+Command: [insert into t4 values(5, "s");]
+Result: [Values inserted successfully into table [t4]!]
+
+[2023.02.12.14.58.26]: User: [waleed]
+Command: [insert into t1 values("s", 1.0, 1, false);]
+Result: [SQL Insert Error: Primary key value ["s"] already exists in table [t1]!]
+
+[2023.02.12.14.58.54]: User: [waleed]
+Command: [insert into t1 values("e", 1.0, 1, f);]
+Result: [SQL Insert Error: Table schema defines [a4] as boolean, but value supplied is not boolean!]
+
+[2023.02.12.14.59.22]: User: [waleed]
+Command: [insert into t1 values("e", 1, 1, false);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.15.02.44]: [waleed] logged in.
+
+[2023.02.12.15.03.03]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Table [t1] schema defines [a4] as boolean, but value supplied is not boolean!]
+
+[2023.02.12.15.03.47]: [waleed] logged in.
+
+[2023.02.12.15.03.48]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.04.27]: User: [waleed]
+Command: [insert into t1 values("e", 4, 1, true);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.15.09.03]: [waleed] logged in.
+
+[2023.02.12.15.09.05]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.09.09]: User: [waleed]
+Command: [insert into t1 values("e", 4, 1, true);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.15.09.44]: [waleed] logged in.
+
+[2023.02.12.15.10.53]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.11.06]: [waleed] logged in.
+
+[2023.02.12.15.11.07]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.11.20]: User: [waleed]
+Command: [insert into t1 values("e", 4, 1, true);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.15.12.16]: [waleed] logged in.
+
+[2023.02.12.15.12.30]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.12.40]: [waleed] logged in.
+
+[2023.02.12.15.13.49]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.17.18]: [waleed] logged in.
+
+[2023.02.12.15.17.26]: User: [waleed]
+Command: [insert into t1 values("e", 4, 1, true);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.15.18.34]: [waleed] logged in.
+
+[2023.02.12.15.18.38]: User: [waleed]
+Command: [insert into t1 values("e", 4, 2, true);]
+Result: [SQL Insert Error: Foreign key value [2] is not a primary key in the reference table [t2]!]
+
+[2023.02.12.15.18.41]: User: [waleed]
+Command: [insert into t1 values("e", 4, 1, true);]
+Result: [Values inserted successfully into table [t1]!]
+
+[2023.02.12.16.45.18]: [waleed] logged in.
+
+[2023.02.12.16.47.04]: [waleed] logged in.
+
+[2023.02.12.16.47.08]: User: [waleed]
+Command: [delete from t5;]
+Result: [SQL Delete Error: Table [t5] does not exist!]
+
+[2023.02.12.16.47.17]: User: [waleed]
+Command: [delete from t4 where r=r;]
+Result: [SQL Delete Error: Table [t4] does not contain attribute [r]!]
+
+[2023.02.12.16.47.22]: User: [waleed]
+Command: [delete from t4;]
+Result: [Successfully deleted 1 from table [t4]!]
+
+[2023.02.12.16.47.59]: User: [waleed]
+Command: [delete from t2;]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t1] has a foreign key reference to [t2]'s row {[1]}!]
+
+[2023.02.12.16.48.31]: User: [waleed]
+Command: [delete from t3 where c1="p5r";]
+Result: [Successfully deleted 1 from table [t3]!]
+
+[2023.02.12.16.48.57]: User: [waleed]
+Command: [insert into t4 values(1, "e");]
+Result: [Values inserted successfully into table [t4]!]
+
+[2023.02.12.16.49.17]: User: [waleed]
+Command: [delete from t1 where a1="e";]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["e", 4.0, 1, true]}!]
+
+[2023.02.12.16.49.25]: User: [waleed]
+Command: [delete from t1;]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["e", 4.0, 1, true]}!]
+
+[2023.02.12.16.49.35]: User: [waleed]
+Command: [delete from t4;]
+Result: [Successfully deleted 1 from table [t4]!]
+
+[2023.02.12.16.49.54]: User: [waleed]
+Command: [insert into t4 values(1, "e");]
+Result: [Values inserted successfully into table [t4]!]
+
+[2023.02.12.16.50.00]: User: [waleed]
+Command: [delete from t4;]
+Result: [Successfully deleted 1 from table [t4]!]
+
+[2023.02.12.16.50.10]: User: [waleed]
+Command: [delete from t1 where a1="e";]
+Result: [Successfully deleted 1 from table [t1]!]
+
+[2023.02.12.16.50.19]: User: [waleed]
+Command: [insert into t4 values(4, "s");]
+Result: [Values inserted successfully into table [t4]!]
+
+[2023.02.12.16.50.30]: User: [waleed]
+Command: [delete from t1 where a1="s";]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["s", 1.0, 1, true]}!]
+
+[2023.02.13.12.15.04]: [waleed] logged in.
+
+[2023.02.13.12.15.48]: User: [waleed]
+Command: [create table t5 (e1 int, e2 string, e4 decimal, e5 boolean, primary key (e1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.13.12.16.05]: User: [waleed]
+Command: [create table t5(e1 int, e2 string, e4 decimal, e5 boolean, primary key (e1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.13.12.44.53]: [waleed] logged in.
+
+[2023.02.13.12.45.01]: User: [waleed]
+Command: [create table t1(a1 int);]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.13.12.45.18]: User: [waleed]
+Command: [create table t1(primary key (a2));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.13.12.45.50]: User: [waleed]
+Command: [create table t5( e1 int, e2 string, e3 decimal, e4 boolean, primary key (e1));]
+Result: [Table [t5] was created successfully!]
+
+[2023.02.13.12.46.13]: User: [waleed]
+Command: [insert into t5 values(1,"s",2, true);]
+Result: [Values inserted successfully into table [t5]!]
+
+[2023.02.13.12.46.20]: User: [waleed]
+Command: [insert into t5(1,1,1,1);]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.13.12.47.06]: User: [waleed]
+Command: [insert into t5(1,"tr",3, false);]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.13.12.47.26]: User: [waleed]
+Command: [insert into t5 values (1,"tr",3, false);]
+Result: [SQL Insert Error: Primary key value [1] already exists in table [t5]!]
+
+[2023.02.13.12.47.42]: User: [waleed]
+Command: [insert into t5 values (2, "tr", 3, true);]
+Result: [Values inserted successfully into table [t5]!]
+
+[2023.02.13.12.48.18]: User: [waleed]
+Command: [update t5 set e1=1 where e3=3.0;]
+Result: [SQL Update Error: No rows affected! Either table [Table@69663380] is empty, or the where clause affects no existing rows in that table!]
+
+[2023.02.13.12.48.52]: User: [waleed]
+Command: [update t5 set e1=1 where e2="tr";]
+Result: [SQL Update Error: No rows affected! Either table [Table@69663380] is empty, or the where clause affects no existing rows in that table!]
+
+[2023.02.13.12.50.10]: [waleed] logged in.
+
+[2023.02.13.12.50.31]: User: [waleed]
+Command: [update t5 set e1=1 where e2="tr";]
+Result: [SQL Update Error: No rows affected! Either table [t5] is empty, or the where clause affects no existing rows in that table!]
+
+[2023.02.13.12.51.00]: [waleed] logged in.
+
+[2023.02.13.12.53.12]: User: [waleed]
+Command: [update t5 set e1=1 where e2="tr";]
+Result: [SQL Update Error: No rows affected! Either table [t5] is empty, or the where clause affects no existing rows in that table!]
+
+[2023.02.13.12.53.30]: [waleed] logged in.
+
+[2023.02.13.12.53.31]: User: [waleed]
+Command: [update t5 set e1=1 where e2="tr";]
+Result: [SQL Update Error: Update will create duplicate primary keys for table [t5]'s PK attribute [e1]!]
+
+[2023.02.13.12.54.12]: User: [waleed]
+Command: [update t5 set e3=4.5 where e4=true;]
+Result: [Successfully updated 2 row(s) of table [t5]!]
+
+[2023.02.13.12.54.45]: User: [waleed]
+Command: [update t5 set e4=false;]
+Result: [Successfully updated 2 row(s) of table [t5]!]
+
+[2023.02.13.12.55.26]: User: [waleed]
+Command: [update t1 set a1="p" where a4=true;]
+Result: [SQL Update Error: Attribute [a1] in one or more rows cannot be updated because table [t4] has a foreign key reference to the current values!]
+
+[2023.02.13.12.55.52]: User: [waleed]
+Command: [update t1 set a1="p";]
+Result: [SQL Update Error: Attribute [a1] in one or more rows cannot be updated because table [t4] has a foreign key reference to the current values!]
+
+[2023.02.13.12.56.05]: User: [waleed]
+Command: [update t5 set e2=3;]
+Result: [SQL Update Error: Table [t5] defines attribute [e2] as string, but value supplied is not!]
+
+[2023.02.13.12.56.15]: User: [waleed]
+Command: [update t5 set e1=true;]
+Result: [SQL Update Error: Table [t5] defines attribute [e1] as int, but value supplied is not!]
+
+[2023.02.13.12.56.34]: User: [waleed]
+Command: [update t5 set e3=3 where e2="tr";]
+Result: [Successfully updated 1 row(s) of table [t5]!]
+
+[2023.02.13.12.56.51]: User: [waleed]
+Command: [update t5 set e3=true;]
+Result: [SQL Update Error: Table [t5] defines attribute [e3] as decimal, but value supplied is not!]
+
+[2023.02.13.12.56.59]: User: [waleed]
+Command: [update t5 set e1=p;]
+Result: [SQL Update Error: Table [t5] defines attribute [e1] as int, but value supplied is not!]
+
+[2023.02.13.12.57.09]: User: [waleed]
+Command: [select * from t5;]
+Result: [e1 || e2 || e3 || e4 || 
+1 || "s" || 4.5 || false || 
+1 || "tr" || 3.0 || false || 
+]
+
+[2023.02.13.12.57.17]: User: [waleed]
+Command: [select e1, e4 from t5;]
+Result: [e1 || e4 || 
+1 || false || 
+1 || false || 
+]
+
+[2023.02.13.12.57.22]: User: [waleed]
+Command: [select e5 from t5;]
+Result: [Select Error: Attribute [e5] does not exist in table [t5]!]
+
+[2023.02.13.12.57.29]: User: [waleed]
+Command: [update t5 set e6=p;]
+Result: [SQL Update Error: Table [t5] does not contains attribute [e6]!]
+
+[2023.02.14.14.20.24]: [waleed] logged in.
+
+[2023.02.14.14.20.31]: User: [waleed]
+Command: [select * from t1;]
+Result: [a1 || a2 || a3 || a4 || 
+"s" || 1.0 || 1 || true || 
+"x" || 2.0 || 1 || false || 
+]
+
+[2023.02.14.14.21.01]: User: [waleed]
+Command: [delete from t1 where a1="s";]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["s", 1.0, 1, true]}!]
+
