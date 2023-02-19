@@ -397,3 +397,208 @@ Result: [a1 || a2 || a3 || a4 ||
 Command: [delete from t1 where a1="s";]
 Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["s", 1.0, 1, true]}!]
 
+[2023.02.19.13.07.11]: [waleed] logged in.
+
+[2023.02.19.13.34.51]: Registered user [newUser]
+
+[2023.02.19.13.43.42]: [waleed] logged in.
+
+[2023.02.19.13.44.13]: User: [waleed]
+Command: [create table t6(att1 int, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.45.36]: User: [waleed]
+Command: [create table t6( att1 int, att2 decimal, att3 boolean, primary key (att1));]
+Result: [Table [t6] was created successfully!]
+
+[2023.02.19.13.47.47]: [waleed] logged in.
+
+[2023.02.19.13.47.50]: User: [waleed]
+Command: [create table t6(att1 int, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.48.01]: User: [waleed]
+Command: [create table t6( att1 int, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.48.11]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.48.39]: [waleed] logged in.
+
+[2023.02.19.13.48.47]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.49.18]: [waleed] logged in.
+
+[2023.02.19.13.49.21]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.49.31]: User: [waleed]
+Command: [create table t6( att1 int , att2 decimal, att3 boolean , primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.49.36]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key ());]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.49.40]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att4));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.49.55]: User: [waleed]
+Command: [create table t7(att1 int , att2 decimal, att3 boolean, primary key (att7));]
+Result: [SQL Create Error: Primary Key [att7] is not a defined attribute in the table being created!]
+
+[2023.02.19.13.50.05]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.50.14]: User: [waleed]
+Command: [create table t7(att1 int , att2 decimal, att3 boolean);]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.50.19]: User: [waleed]
+Command: [create table t7(att1 int , att2 decimal, att3 bool, primary key (att7));]
+Result: [SQL Create Error: Attribute type [bool] for attribute [att3] not recognized!]
+
+[2023.02.19.13.57.57]: User: [waleed]
+Command: [create command rejected]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.58.12]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.58.31]: User: [waleed]
+Command: [create table t6(att1 int , att2 decimal, att3 boolean);]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.58.48]: User: [waleed]
+Command: [create table t6(att1, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Syntax Error!]
+
+[2023.02.19.13.59.04]: User: [waleed]
+Command: [create table t6(att1 datetime, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Table [t6] already exists!]
+
+[2023.02.19.13.59.21]: User: [waleed]
+Command: [create table t8(att1 datetime, att2 decimal, att3 boolean, primary key (att1));]
+Result: [SQL Create Error: Attribute type [datetime] for attribute [att1] not recognized!]
+
+[2023.02.19.14.05.05]: User: [waleed]
+Command: [insert into t6(1, 4.0, true);]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.19.14.05.19]: User: [waleed]
+Command: [insert into t6 values(1, 4.0 ,true);]
+Result: [SQL Insert Error: Table [t6] schema defines [att1] as int, but value supplied is not int!]
+
+[2023.02.19.14.07.02]: User: [waleed]
+Command: [insert into t6 values(1,4.0,true);]
+Result: [SQL Insert Error: Table [t6] schema defines [att1] as int, but value supplied is not int!]
+
+[2023.02.19.14.07.22]: [waleed] logged in.
+
+[2023.02.19.14.09.25]: User: [waleed]
+Command: [insert into t6 values(1, 4.0 ,true);]
+Result: [SQL Insert Error: Table [t6] schema defines [att1] as int, but value supplied is not int!]
+
+[2023.02.19.14.09.40]: [waleed] logged in.
+
+[2023.02.19.14.09.59]: User: [waleed]
+Command: [create table t6(att1 int, att2 decimal, att3 boolean, primary key(att1));]
+Result: [Table [t6] was created successfully!]
+
+[2023.02.19.14.10.44]: [waleed] logged in.
+
+[2023.02.19.14.14.09]: User: [waleed]
+Command: [create table t6(att1 int, att2 decimal, att3 boolean, primary key(att1));]
+Result: [Table [t6] was created successfully!]
+
+[2023.02.19.14.14.25]: [waleed] logged in.
+
+[2023.02.19.14.14.26]: User: [waleed]
+Command: [create table t6(att1 int, att2 decimal, att3 boolean, primary key(att1));]
+Result: [Table [t6] was created successfully!]
+
+[2023.02.19.14.14.48]: User: [waleed]
+Command: [insert into t6 values(1, 4.0 ,true );]
+Result: [Values inserted successfully into table [t6]!]
+
+[2023.02.19.14.20.27]: User: [waleed]
+Command: [insert into t99 values(1,2,3);]
+Result: [SQL Insert Error: Table [t99] does not exist!]
+
+[2023.02.19.14.20.42]: User: [waleed]
+Command: [insert into t6(true, "s", 2);]
+Result: [SQL Insert Syntax Error!]
+
+[2023.02.19.14.20.53]: User: [waleed]
+Command: [insert into t6 values("s", 5.0, true);]
+Result: [SQL Insert Error: Table [t6] schema defines [att1] as int, but value supplied is not int!]
+
+[2023.02.19.14.21.07]: User: [waleed]
+Command: [insert into t6 values(1, 5.5, false);]
+Result: [SQL Insert Error: Primary key value [1] already exists in table [t6]!]
+
+[2023.02.19.14.25.30]: User: [waleed]
+Command: [select * from t1;]
+Result: [a1 || a2 || a3 || a4 || 
+"s" || 1.0 || 1 || true || 
+"x" || 2.0 || 1 || false || 
+]
+
+[2023.02.19.14.25.49]: User: [waleed]
+Command: [select a1, a3, a4 from t1 where a4=false;]
+Result: [a1 || a3 || a4 || 
+"x" || 1 || false || 
+]
+
+[2023.02.19.14.25.59]: User: [waleed]
+Command: [select & from t99;]
+Result: [SQL Select Syntax Error!]
+
+[2023.02.19.14.26.09]: User: [waleed]
+Command: [select a5 from t1;]
+Result: [Select Error: Attribute [a5] does not exist in table [t1]!]
+
+[2023.02.19.14.33.15]: User: [waleed]
+Command: [update t6 set att1=2 where att1=1;]
+Result: [Successfully updated 1 row(s) of table [t6]!]
+
+[2023.02.19.14.34.04]: User: [waleed]
+Command: [update t6 set att6=3;]
+Result: [SQL Update Error: Table [t6] does not contains attribute [att6]!]
+
+[2023.02.19.14.34.11]: User: [waleed]
+Command: [update t99 set att1=1;]
+Result: [SQL Update Error: Table [t99] does not exist!]
+
+[2023.02.19.14.34.22]: User: [waleed]
+Command: [update t6 set att3="s";]
+Result: [SQL Update Error: Table [t6] defines attribute [att3] as boolean, but value supplied is not!]
+
+[2023.02.19.14.38.31]: User: [waleed]
+Command: [delete from t6 where att1=1;]
+Result: [SQL Delete Error: No rows affected! Either table [t6] is empty, or the where clause affects no existing rows in that table!]
+
+[2023.02.19.14.38.48]: User: [waleed]
+Command: [delete from t6 where att1=2;]
+Result: [Successfully deleted 1 row(s) from table [t6]!]
+
+[2023.02.19.14.39.19]: User: [waleed]
+Command: [delete from t99;]
+Result: [SQL Delete Error: Table [t99] does not exist!]
+
+[2023.02.19.14.39.30]: User: [waleed]
+Command: [delete from t6 where att99=false;]
+Result: [SQL Delete Error: Table [t6] does not contain attribute [att99]!]
+
+[2023.02.19.14.39.50]: User: [waleed]
+Command: [delete from t1 where a1="s";]
+Result: [SQL Delete Error: Cannot delete row(s) because the table [t4] has a foreign key reference to [t1]'s row {["s", 1.0, 1, true]}!]
+

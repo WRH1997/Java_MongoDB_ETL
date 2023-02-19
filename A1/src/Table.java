@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /*
 This class encapsulates the data of a table. In other words, each table in the Tables.txt file is stored as
@@ -47,7 +44,7 @@ public class Table {
     Table(String tableContent){
         name = tableContent.split("<")[0];
         primaryKey = tableContent.split("%")[1].split("\\^")[0].split(";")[0];
-        schema = new HashMap<>();
+        schema = new LinkedHashMap<>();
         String parsedSchema[] = tableContent.split("<")[1].split("%")[0].split(";");
         int indexCounter = 0;
         for(String schemaAtt: parsedSchema){
@@ -59,12 +56,12 @@ public class Table {
                 indexCounter++;
             }
         }
-        foreignKeys = new HashMap<>();
-        rows = new HashMap<>();
+        foreignKeys = new LinkedHashMap<>();
+        rows = new LinkedHashMap<>();
         String FKCheck[] = tableContent.split("\\^");
         if(!FKCheck[1].equals("$")){
             String parsedFKs = tableContent.split("\\^")[1].split("\\$")[0];
-            foreignKeys = new HashMap<>();
+            foreignKeys = new LinkedHashMap<>();
             if(!parsedFKs.equals("")){
                 String splitFKs[] = parsedFKs.split(";");
                 for(String FK: splitFKs){
@@ -72,7 +69,7 @@ public class Table {
                 }
             }
         }
-        rows = new HashMap<>();
+        rows = new LinkedHashMap<>();
         if(tableContent.contains("#")){
             String parsedRows[] = tableContent.split("\\$")[1].split("#");
             for(String row: parsedRows){

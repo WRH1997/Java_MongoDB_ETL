@@ -33,7 +33,7 @@ public class QueryInterface {
     @Return no return values
      */
     QueryInterface() throws Exception{
-        allTables = new HashMap<>();
+        allTables = new LinkedHashMap<>();
         String filePath = new File("Tables.txt").getAbsolutePath();
         tableFile = new File(filePath);
         if(!tableFile.exists()){
@@ -516,7 +516,7 @@ public class QueryInterface {
         else{
             updateTable = allTables.get(tableName);
         }
-        Map<String, String> updateParams = new HashMap<>();
+        Map<String, String> updateParams = new LinkedHashMap<>();
         String updateClauses[];
         if(sqlCommand.contains("where")){
             updateClauses = sqlCommand.split("set")[1].split("where")[0].trim().split(",");
@@ -623,7 +623,7 @@ public class QueryInterface {
                 }
             }
         }
-        Map<String, List<String>> postUpdateRows = new HashMap<>();
+        Map<String, List<String>> postUpdateRows = new LinkedHashMap<>();
         List<String> updateAttributes = new ArrayList<>();
         updateAttributes.addAll(updateParams.keySet());
         int updateCounter = 0;
@@ -683,7 +683,7 @@ public class QueryInterface {
      */
     private String create(String sqlCommand) throws Exception{
         sqlCommand = sqlCommand.replaceAll("  "," ");
-        Pattern createPattern = Pattern.compile("create\\s+table\\s+[A-Za-z0-9]+\\s?\\((\\s+[A-Za-z0-9]+\\s+[A-Za-z0-9]+,)+\\s+primary\\s?key\\s?\\([A-Za-z0-9]+\\)(\\s?,\\s+foreign key\\s+\\([A-Za-z0-9]+\\)\\s+references\\s+[A-Za-z0-9]+\\s?\\([A-Za-z0-9]+\\))?\\s?\\)\\s?;", Pattern.CASE_INSENSITIVE);
+        Pattern createPattern = Pattern.compile("create\\s+table\\s+[A-Za-z0-9]+\\s?\\((\\s*[A-Za-z0-9]+\\s+[A-Za-z0-9]+\\s*,)+\\s+primary\\s?key\\s?\\([A-Za-z0-9]+\\)(\\s?,\\s+foreign key\\s+\\([A-Za-z0-9]+\\)\\s+references\\s+[A-Za-z0-9]+\\s?\\([A-Za-z0-9]+\\))?\\s?\\)\\s?;", Pattern.CASE_INSENSITIVE);
         if(!createPattern.matcher(sqlCommand).matches()){
             System.out.println("SQL Create Syntax Error!");
             return "SQL Create Syntax Error!";
@@ -693,7 +693,7 @@ public class QueryInterface {
             System.out.println("SQL Create Error: Table ["+tableName+"] already exists!");
             return "SQL Create Error: Table ["+tableName+"] already exists!";
         }
-        Map<String, String> schema = new HashMap<>();
+        Map<String, String> schema = new LinkedHashMap<>();
         String attributes[] = sqlCommand.split("\\(")[1].split(" primary")[0].split(",");
         for(String attribute: attributes){
             attribute = attribute.trim();

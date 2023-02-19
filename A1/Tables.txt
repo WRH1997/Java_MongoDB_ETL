@@ -18,7 +18,6 @@ e4 boolean;
 e1;
 ^
 $
-#1,"s",4.5,false
 #1,"tr",3.0,false
 !t1
 <
@@ -47,5 +46,14 @@ $
 c1 string;
 %
 c1;
+^
+$
+!t6
+<
+att1 int;
+att2 decimal;
+att3 boolean;
+%
+att1;
 ^
 $
