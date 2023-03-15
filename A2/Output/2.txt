@@ -1,31 +1,31 @@
-Title: Saturday Sessions: William Prince performs \When You Miss Someone\
-Source: CBS News
+Title: CBC News Explore
+Source: CBC News
 Keyword: Canada
-Author: CBS News
-Description: William Prince joins this week's Saturday Sessions. The First Nations member and Canada native is about to release his fourth studio album. Here is William Prince with \When You Miss Someone.\
-URL: https://www.cbsnews.com/video/saturday-sessions-william-prince-performs-when-you-miss-someone/
-Image URL: https://assets1.cbsnewsstatic.com/hub/i/r/2023/03/11/4c52ce24-1e8a-48b7-8ef1-ddba88bea139/thumbnail/1200x630/ce61a9a457865ef45d3ea2645da33867/0311-satmo-saturday-sessions-when-you-miss-someone-1787907-640x360.jpg
-Published At: 2023-03-11T17:30:31+00:00
-Content: Watch CBS News\r\nCopyright ©2023 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On
-
-Title: Why Canada asylum seekers are using unofficial U.S. border crossings - Reuters Canada
-Source: Google News (Canada)
-Keyword: Canada
-Author: Reuters Canada
-Description: null
-URL: https://news.google.com/rss/articles/CBMidmh0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL2FtZXJpY2FzL2NhbmFkYS1pbW1pZ3JhdGlvbi13aHktcmVjb3JkLWFzeWx1bS1zZWVrZXJzLWFyZS1jcm9zc2luZy11cy1ib3JkZXItMjAyMy0wMy0xMS_SAQA?oc=5
-Image URL: null
-Published At: 2023-03-11T16:53:00+00:00
+Author: CBC News
+Description: CBC News Explore takes you beyond the headlines to explain and experience the news with our journalists in Canada and the world.
+URL: http://www.cbc.ca/player/play/2049722435757
+Image URL: https://thumbnails.cbc.ca/maven_legacy/thumbnails/976/659/Explore-Thumbnail-Gem-16x9.jpg
+Published At: 2023-03-13T22:52:16.1224584Z
 Content: null
 
-Title: Canada Bans Aluminum, Steel Imports From Russia - The Moscow Times
+Title: World Baseball Classic highlights: United States vs. Canada
+Source: Fox Sports
+Keyword: Canada
+Author: null
+Description: The 2023 World Baseball Classic continues Monday with the U.S. facing Canada in Pool C group play. Here are the top plays!
+URL: http://www.foxsports.com/stories/mlb/world-baseball-classic-highlights-united-states-vs-canada
+Image URL: https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/03/1408/814/03.13.23_WBC_Live-Match-Updates_USA-vs.-Canada_16x9.jpg?ve=1&tl=1
+Published At: 2023-03-13T22:36:07Z
+Content: The 2023 World Baseball Classic\r\n is in full swing, with the United States facing Canada in Monday's final game.\r\nThe U.S. is part of Pool C, which features group play in Phoenix, along with Canada, … [+1722 chars]
+
+Title: Canada's omission from AUKUS agreement a concern: experts - CTV News
 Source: Google News (Canada)
 Keyword: Canada
-Author: The Moscow Times
+Author: CTV News
 Description: null
-URL: https://news.google.com/rss/articles/CBMiX2h0dHBzOi8vd3d3LnRoZW1vc2Nvd3RpbWVzLmNvbS8yMDIzLzAzLzExL2NhbmFkYS1iYW5zLWFsdW1pbnVtLXN0ZWVsLWltcG9ydHMtZnJvbS1ydXNzaWEtYTgwNDUx0gEA?oc=5
+URL: https://news.google.com/rss/articles/CBMidmh0dHBzOi8vd3d3LmN0dm5ld3MuY2EvcG9saXRpY3MvY2FuYWRhLW9uLXNpZGVsaW5lcy1hcy11LXMtYnJpdGFpbi1hdXN0cmFsaWEtbW92ZS1haGVhZC1vbi1uZXctc2VjdXJpdHktZGVhbC0xLjYzMTEyMjDSAQA?oc=5
 Image URL: null
-Published At: 2023-03-11T09:15:18+00:00
+Published At: 2023-03-13T20:50:51+00:00
 Content: null
 
 Title: Financial Post

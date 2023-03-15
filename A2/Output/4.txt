@@ -1,3 +1,13 @@
+Title: Economist blames rising inflation on COVID-19 policies, as woman tells Q+A she can no longer afford university
+Source: ABC News (AU)
+Keyword: University
+Author: Paul Johnson
+Description: A young Australian tells Q+A she has been forced to forego her education due to the spiralling cost of living, opening the door for economist Gigi Foster to blame COVID-era government policy for rising inflation in Australia.
+URL: http://www.abc.net.au/news/2023-03-14/gigi-foster-blames-covid-policy-for-inflation-university-debt/102090946
+Image URL: https://live-production.wcms.abc-cdn.net.au/bfac302ed3d755285a88169f6ed881cc?impolicy=wcms_crop_resize&cropH=450&cropW=801&xPos=0&yPos=0&width=862&height=485
+Published At: 2023-03-13T13:26:00Z
+Content: Economist Gigi Foster has again attacked government policy related to the COVID-19 pandemic, saying on Q+A it has played a significant part in rising inflation.\r\nKey points:\r\n<ul><li>Musician Billy B… [+8115 chars]
+
 Title: Why US-based unicorn HackerOne keeps their dev team in Groningen
 Source: The Next Web
 Keyword: University
@@ -28,23 +38,13 @@ Image URL: https://www.nationalgeographic.com/content/dam/travel/commercial/2021
 Published At: 2021-02-17T14:37:20.746352Z
 Content: null
 
-Title: Eishockey: Münchens Yasin Ehliz bester DEL-Spieler
-Source: Die Zeit
-Keyword: hockey
-Author: null
-Description: null
-URL: https://www.zeit.de/news/2023-03/11/muenchens-yasin-ehliz-bester-del-spieler
-Image URL: null
-Published At: 2023-03-11T20:27:31+00:00
-Content: When browsing with ads:\r\nWe collect personal data and also transmit it to third-party providers\r\n that help us improve and finance our digital content. Some of the information stored on your device, … [+732 chars]
-
-Title: Fletcher fired as Flyers GM, replaced by Briere
-Source: NHL News
-Keyword: hockey
-Author: NHL.com
-Description: Chuck Fletcher was fired as general manager and president of hockey operations of the Philadelphia Flyers on Friday.
-URL: https://www.nhl.com/news/chuck-fletcher-fired-as-philadelphia-general-manager/c-342065730
-Image URL: https://cms.nhl.bamgrid.com/images/photos/342065188/1024x576/cut.jpg
-Published At: 2023-03-10T14:37:44Z
-Content: Chuck Fletcher was fired as general manager and president of hockey operations of the Philadelphia Flyers on Friday.The Flyers (24-30-11) are seventh in the Metropolitan Division this season and have… [+2159 chars]
+Title: Richarlison Gets The Lionel Messi Shirt Celebration All Wrong
+Source: The Sport Bible
+Keyword: celebration
+Author: Ryan Sidle
+Description: The Everton forward messed up Messi's iconic Clasico celebration by showing the wrong side of his shirt to the crowd.
+URL: http://www.thesportbible.com/football/funny-fails-richarlison-gets-the-lionel-messi-shirt-celebration-all-wrong-20190828
+Image URL: http://beta.ems.ladbiblegroup.com/s3/content/808x455/970d71e35d6686088bfccc3f1560dad2.png
+Published At: 2019-08-28T21:49:20Z
+Content: Everton forward Richarlison tried to replicate Lionel Messi's famous shirt holding goal celebration on Wednesday night but the Brazilian got it completely wrong, holding the shirt the wrong way round… [+1669 chars]
 
