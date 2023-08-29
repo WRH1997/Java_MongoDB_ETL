@@ -9,11 +9,11 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.result.InsertOneResult;
+import java.util.List;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 
-import java.util.List;
 
 
 
@@ -46,7 +46,7 @@ public class MongoInterface {
     @Return: no return values
      */
     MongoInterface(){
-        connectionString = new ConnectionString("mongodb://waleed:pokemon@ac-4driqs9-shard-00-00.ypxq3nm.mongodb.net:27017,ac-4driqs9-shard-00-01.ypxq3nm.mongodb.net:27017,ac-4driqs9-shard-00-02.ypxq3nm.mongodb.net:27017/?ssl=true&replicaSet=atlas-30rx39-shard-0&authSource=admin&retryWrites=true&w=majority");
+        connectionString = new ConnectionString("[REDACTED]");
         settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
